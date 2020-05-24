@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "45a30d8c-8bc1-414f-9f47-67847c639ba7",
+		"name": "SpringBoot Cloud Config",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Actuator Bus Refresh (Client)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/actuator/bus-refresh"
+			},
+			"response": []
+		},
+		{
+			"name": "Check Live Values (Server)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "s3cr3t",
+						"username": "root"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8888/config-client/development"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Data (Client)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Admin Data (Client)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Actuator Refresh (Client)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/actuator/refresh"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
